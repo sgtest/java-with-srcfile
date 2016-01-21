@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+group = 'com.sourcegraph'
+version = '0.0.1-SNAPSHOT'
+description = 'Test srclib-java for gradle support.'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'com.beust:jcommander:1.30'
+}
