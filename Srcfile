@@ -9,18 +9,12 @@
          ],
          "Dependencies":[  
             {  
-               "artifactID":"jcommander",
-               "file":".gradle-srclib/caches/modules-2/files-2.1/com.beust/jcommander/1.30/c440b30a944ba199751551aee393f8aa03b3c327/jcommander-1.30.jar",
-               "groupID":"com.beust",
-               "scope":"compile",
-               "version":"1.30"
+               "Name":"com.beust/jcommander",
+               "Version":"1.30"
             },
             {  
-               "artifactID":"jcommander",
-               "file":".gradle-srclib/caches/modules-2/files-2.1/com.beust/jcommander/1.30/c440b30a944ba199751551aee393f8aa03b3c327/jcommander-1.30.jar",
-               "groupID":"com.beust",
-               "scope":"testCompile",
-               "version":"1.30"
+               "Name":"com.beust/jcommander",
+               "Version":"1.30"
             }
          ],
          "Data":{  
@@ -30,18 +24,34 @@
             "Description":"Test srclib-java for gradle support.",
             "GradleFile":"build.gradle",
             "SourcePath":[  
-               [  
-                  "com.sourcegraph/java-with-srcfile",
-                  "0.0.1-SNAPSHOT",
-                  "src/main/java"
-               ],
-               [  
-                  "com.sourcegraph/java-with-srcfile",
-                  "0.0.1-SNAPSHOT",
-                  "src/test/java"
-               ]
+               {
+                  "name": "com.sourcegraph/java-with-srcfile",
+                  "version": "0.0.1-SNAPSHOT",
+                  "filePath": "src/main/java"
+               },
+               {  
+                  "name": "com.sourcegraph/java-with-srcfile",
+                  "version": "0.0.1-SNAPSHOT",
+                  "filePath": "src/test/java"
+               }
             ],
-            "SourceVersion":"1.8"
+            "SourceVersion":"1.8",
+            "Dependencies":[  
+               {  
+                  "artifactID":"jcommander",
+                  "file":".gradle-srclib/caches/modules-2/files-2.1/com.beust/jcommander/1.30/c440b30a944ba199751551aee393f8aa03b3c327/jcommander-1.30.jar",
+                  "groupID":"com.beust",
+                  "scope":"compile",
+                  "version":"1.30"
+               },
+               {  
+                  "artifactID":"jcommander",
+                  "file":".gradle-srclib/caches/modules-2/files-2.1/com.beust/jcommander/1.30/c440b30a944ba199751551aee393f8aa03b3c327/jcommander-1.30.jar",
+                  "groupID":"com.beust",
+                  "scope":"testCompile",
+                  "version":"1.30"
+               }
+            ]
          }
       }
    ]
